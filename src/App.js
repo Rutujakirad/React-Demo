@@ -1,14 +1,12 @@
-import { useState } from "react";
-import Counter from "./Counter";
-import Message from "./Message";
+import React from "react";
+import Counter from "./components/Counter";
+import Message from "./components/Message";
 
 export default function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div>
-      <Counter count={count} setCount={setCount} />
-      <Message count={count} />
+      <Counter />
+      <Message />
     </div>
   );
 }
