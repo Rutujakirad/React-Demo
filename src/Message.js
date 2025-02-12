@@ -1,11 +1,7 @@
-import { useEffect, useState } from "react";
+import { useCountMessage } from "./useCountMessage";
 
 export default function Message({ count }) {
-  const [message, setMessage] = useState("The count is neutral.");
-
-  useEffect(() => {
-    setMessage(`The count is ${count % 2 === 0 ? "Even" : "Odd"}.`);
-  }, [count]);
+  const message = useCountMessage(count);
 
   return <p>{message}</p>;
 }
