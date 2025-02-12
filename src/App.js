@@ -1,5 +1,6 @@
-import Counter from "./Counter";
-import Message from "./Message";
+import React from "react";
+import Counter from "./components/Counter";
+import Message from "./components/Message";
 
 export default function App() {
   return (
