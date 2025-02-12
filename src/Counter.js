@@ -1,9 +1,10 @@
+import { useState } from "react";
+
 export default function Counter() {
-  let count = 0;
+  const [count, setCount] = useState(0);
 
   const increment = () => {
-    count++; 
-    console.log("Count:", count);
+    setCount(count + 1); // Triggers re-render
   };
 
   return (
