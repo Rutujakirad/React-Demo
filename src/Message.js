@@ -1,3 +1,7 @@
-export default function Message() {
-  return <p>The count is neutral.</p>;
+import { useCountMessage } from "./useCountMessage";
+
+export default function Message({ count }) {
+  const message = useCountMessage(count);
+
+  return <p>{message}</p>;
 }
